@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<style>
+    body {
+      background-image: url('https://img.freepik.com/free-photo/empty-warehouse-logistic-center_41470-4807.jpg?w=1480&t=st=1668658262~exp=1668658862~hmac=e3d1b368d0bee9f179ec4d1470dd5862a127c068c9d81b758bad9a718c14ec05.png');
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+    .tet{
+    color:#ff0000;
+
+    }
+    </style><br><br>
+<div class="jumbotron">
+    <h7 class="display-4">Inventory Management System for Retailers</h7><br><br>
+    {% if session.logged_in == NULL %}
+        <center><a href="/register" class="btn btn-primary btn-lg">Register</a>
+        <a href="/login" class="btn btn-success btn-lg">Login</a></center>
+    {% endif %}<br>
+    <center><h5>DEVELOPED By:<BR> <BR>BENSON ARUN ISHANSAI AAKASH</h5><center>
+</div>
+{% endblock %}
